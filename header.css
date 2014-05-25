@@ -1,3 +1,8 @@
+*
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
 #header ul {
 	list-style: none;
 	padding:0;
@@ -36,4 +41,21 @@ h1 {
 	position: relative;
 	top: 1px;
 	background: lightgrey;
+}
+
+.td_margin
+{
+	width: 25px;
+}
+
+.subtitle
+{
+	margin: 20px 0 0 20px;
+	padding: 0 0 0 0;
+	text-align: left;
+}
+
+.title-size
+{
+	width: 95%;
 }
