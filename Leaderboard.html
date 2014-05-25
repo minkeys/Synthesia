@@ -2,12 +2,58 @@
 <html>
 
 	<head>
-		<link type="text/css" link rel="stylesheet" href="header.css"/>
+		<link rel="stylesheet" href="header.css">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+    	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    	<link href="css/theme.css" rel="stylesheet">
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 	</head>
 
 	<body>
-		<h1>Leaderboard</h1>
+		<div class="container theme-showcase" role="main">
 		
+			<h1>Leaderboard</h1>
+			
+			<!--Search bar-->
+			<div id="tfheader">
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+					<input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="Search song" class="tfbutton">
+				</form>
+				<div class="tfclear"></div>
+			</div>
+			
+			<br></br>
+		
+			<!--progress bar-->
+			<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+					<span class="sr-only">60% Complete</span>
+				</div>
+			</div>
+			
+			<br></br>
+		
+			<!--Picture, compared to others visual-->
+			<div>
+			</div>
+			
+			<!--Compared to others table-->
+			<div>
+				<table>
+					<th>Place</th>
+					<th>Name</th>
+					<th>Combined High Scores</th>
+					
+					
+				</table>
+			</div>
+			
+			<!--Recent:30 days/60 days visual-->
+			<div>
+				
+			</div>
+		
+		</div>
 	</body>
 
 </html>
