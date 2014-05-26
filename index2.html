@@ -1,4 +1,4 @@
-<!doctype html >
+<!DOCTYPE html>
 <html>
 
 	<head>
@@ -9,13 +9,22 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <script src="jquery-1.11.1.min.js"></script>
-    <script language="javascript" type="text/javascript" src="javascript/script.js"></script>
+    <script src="javascript/docs.min.js"></script>
+    <script src="/javascript/script.js"></script>
     <title>Town &amp; Country</title>
 	</head>
 
 	<body>
 	 <div class="container theme-showcase" role="main">
+    
    <div class="navbar navbar-inverse navbar-fixed-top">
+    <script type="text/javascript">
+      /*Code your java script here*/
+      // example: tab functionality
+      $("a").click(function(){
+        alert("you clicked tab#1");
+      });
+    </script>
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -48,10 +57,21 @@
         </div>
       </div>
 	
+  <div class="jumbotron">
+    <table>
+      <tr>
+        <td><img data-src="holder.js/175x175" class="img-thumbnail" alt="200x200"/></td>
+        <td>
+          <div id="user-name"></div>
+          <div id="status"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
 	<!--TABS-->
 	<div class="tabs">
     <ul class="tab-links">
-        <li class="active"><a href="#tab1">Personal Statistics</a></li>
+        <li class="active"><a href="#tab1" class="tab-clicking">Personal Statistics</a></li>
         <li><a href="#tab2">Recently Played</a></li>
         <li><a href="#tab3">Favorites</a></li>
         <li><a href="#tab4">Leaderboard</a></li>
@@ -62,6 +82,7 @@
 
 		<!-- Applying Bootstrap to panel -->
 		<div class="tab-content">
+      <div id="tab1">
     		<div class="page-header">
     			<h2 class="subtitle"><b>Top Achievements</b></h2>
           	</div>
@@ -172,6 +193,8 @@
               	</div>
             </div><!-- /.col-sm-4 -->
           </div><!-- row -->
+        </div> <!-- tab 1-->
+        <div id="tab2"><h4>Elements to be hidden/displayed</h4></div>
     </div> <!-- tab-content -->
   </div>
     	<script src="javascript/jquery.min.js"></script>
