@@ -69,68 +69,81 @@ h1 {
 
 
 /*Recently Played CSS*/
-#recentlyPlayedBorder > table
+
+
+.recentlyPlayedTable > td
 {
-	border: 1px solid;
-	font-size: 20px;
-	border-color: #428bca;
-	margin: 0 0 0 20px;
+	text-align: center;
 }
 
-.theTable
-{
-	border-radius: 15px;
+.pic
+{ 
+	width:100px; 
+	height:100px; 
+	background: #c3dfef;
+} 
+
+.text
+{ 
+	width:100px; 
+	height:100px; 
+	background:#FFF; 
+	opacity:0; 
+} 
+
+.pic:hover .text 
+{ 
+	opacity:0.6; 
+	text-align:justify; 
+	color:#000000; 
+	font-size:10px; 
+	font-weight:700; 
+	font-family:"Times New Roman", Times, serif; 
+	padding:30px; 
 }
 
-.recentlyPlayedPadding
-{
-	padding: 0 0 0 0;
-}
 
-div table th
-{
-	font-size: 26px;
-	background-color: #428bca;
-	color: #FFFFFF;
-	padding: 10px 200px 10px 0px;
-}
-
-div > table
-{
-	border-color: 428bca;
-}
 
 
 /*favorites CSS*/
 
 /* 'star-rating' component */
-.starRate {position:relative; margin:20px; overflow:hidden; zoom:1;}
-.starRate ul {width:160px; margin:0; padding:0;}
-.starRate li {display:inline; list-style:none;}
-.starRate a, .starRate b {background: black;
-}
-.starRate a {float:right; margin:0 80px 0 -144px; width:80px; height:16px; background-position:left 16px; color:#000; text-decoration:none;}
-.starRate a:hover {background-position:left -32px;}
-.starRate b {position:absolute; z-index:-1; width:80px; height:16px; background-position:left -16px;}
-.starRate div b {left:0px; bottom:0px; background-position:left top;}
-.starRate a span {position:absolute; left:-300px;}
-.starRate a:hover span {left:90px; width:100%;}
+  .rating {
+      overflow: hidden;
+      display: inline-block;
+  }
+  .rating-input {
+      float: right;
+      width: 16px;
+      height: 16px;
+      padding: 0;
+      margin: 0 0 0 -16px;
+      opacity: 0;
+  }
+  
+    .rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url(http://i.imgur.com/YsyS5y8.png) 0 -16px repeat-x;
+  }
 
-
-#favoritesBorder
-{
-	border: 1px solid;
-	border-color: #428bca;
-	border-radius: 15px;
-	margin: 0 0 0 20px;
-}
-
-#favoritesSongTitle
-{
-	font-size: 26px;
-	color: #FFFFFF;
-	background-color: #428bca;
-}
+    .rating:hover .rating-star:hover,
+  .rating:hover .rating-star:hover ~ .rating-star,
+  .rating-input:checked ~ .rating-star {
+      background-position: 0 0;
+  }
+  .rating-star,
+  .rating:hover .rating-star {
+      position: relative;
+      float: right;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url(http://i.imgur.com/YsyS5y8.png) 0 -16px repeat-x;
+  }
 
 /*Leaderboard CSS*/
 #tfheader{
@@ -253,6 +266,7 @@ table.leaderboard
 #yourLeaderScore
 {
 	background-color: #c3dfef;
+	font-weight: bold;
 }
 
 /*Recent:30/60days visual/table*/
