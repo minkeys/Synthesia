@@ -67,7 +67,7 @@
              <div class="col-md-8">
              <div class="profileName">
                <h2>
-                  <b>John Chou</b>
+                  John Chou
                </h2>
                <h4>            
                 I love town and country! This website was built with ejs, css, js on the front end, and nodejs, mongoose, and passport in the backend
