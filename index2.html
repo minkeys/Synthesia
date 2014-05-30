@@ -10,21 +10,20 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
     <script src="jquery-1.11.1.min.js"></script>
     <script src="javascript/docs.min.js"></script>
-    <script src="/javascript/script.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="/javascript/bootstrap.js"></script>
     <title>Town &amp; Country</title>
 	</head>
 
 	<body>
 	 <div class="container" role="main">
-    
-   <div class="navbar navbar-inverse navbar-fixed-top">
-    <script type="text/javascript">
-      /*Code your java script here*/
-      // example: tab functionality
-      $("a").click(function(){
-        alert("you clicked tab#1");
+        <script type="text/javascript">
+      $('#myTab a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
       });
     </script>
+   <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,11 +64,11 @@
   </div>
 	<!--TABS-->
 	<div class="tabs">
-    <ul class="tab-links">
-        <li class="active"><a href="#tab1" class="tab-clicking">Personal Statistics</a></li>
-        <li><a href="#tab2">Recently Played</a></li>
-        <li><a href="#tab3">Favorites</a></li>
-        <li><a href="#tab4">Leaderboard</a></li>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">Personal Statistics</a></li>
+        <li><a href="#tab2" data-toggle="tab">Recently Played</a></li>
+        <li><a href="#tab3" data-toggle="tab">Favorites</a></li>
+        <li><a href="#tab4" data-toggle="tab">Leaderboard</a></li>
     </ul>
     </div>
 		<br/>
@@ -77,7 +76,7 @@
 
 		<!-- Applying Bootstrap to panel -->
 		<div class="tab-content">
-      <div id="tab1">
+      <div class="tab-pane active" id="tab1">
     		<div class="page-header">
     			<h2 class="subtitle"><b>Top Achievements</b></h2>
           	</div>
@@ -189,7 +188,15 @@
             </div><!-- /.col-sm-4 -->
           </div><!-- row -->
         </div> <!-- tab 1-->
-        <div id="tab2"><h4>Elements to be hidden/displayed</h4></div>
+        <div class="tab-pane" id="tab2">
+          <!-- TODO "Recently Played"-->
+        </div> <!-- tab 2-->
+        <div class="tab-pane" id="tab3">
+          <!-- TODO "Favorites"-->
+        </div> <!-- tab 3-->
+        <div class="tab-pane" id="tab4">
+          <!-- TODO "Leaderboard" -->
+        </div> <!-- tab 4-->
     </div> <!-- tab-content -->
   </div>
     	<script src="javascript/jquery.min.js"></script>
