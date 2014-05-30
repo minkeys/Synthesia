@@ -308,3 +308,8 @@ table.leaderboard
 	padding-top: 20px;
 	padding-left: 15px;
 }
+
+.flow-search
+{
+	display: inline-block;
+}
