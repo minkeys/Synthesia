@@ -255,6 +255,12 @@ table.leaderboard
 {
 	background-color: #65E0C8;
 	font-weight: bold;
+	text-align: center;
+}
+
+.leaderboardValues > td
+{
+	text-align: center;
 }
 
 /*Recent:30/60days visual/table*/
