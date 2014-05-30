@@ -291,13 +291,13 @@ table.leaderboard
 	border-bottom-right-radius: 20px;
 }
 
-
-
-
 .footer
 {
   margin-top: 25px;
   padding-left: 20px;
 }
 
-
+.jumbotron
+{
+	border: solid 1px #ddd;
+}

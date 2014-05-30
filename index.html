@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--<link rel="stylesheet" href="style.css">-->
+		<link rel="stylesheet" href="header.css">
+		
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="javascript/docs.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="/javascript/bootstrap.js"></script>
+    <title>Town &amp; Country</title>
+	</head>
+
+	<body>
+	 <div class="container" role="main">
+   <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b>Town and Country</b></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+	
+  <div class="jumbotron">
+    <div class="row">
+             <div class="col-md-3">
+               
+                 <img src ="http://scf.ucsd.edu/images/Logo.png" style = "width:150px; height: 150px">
+               
+             </div>
+             <div class="col-md-8">
+             <div class="profileName">
+               <h2>
+                  <b>John Chou</b>
+               </h2>
+               <h4>            
+                I love town and country! This website was built with ejs, css, js on the front end, and nodejs, mongoose, and passport in the backend
+               </h4>
+               </div>
+            </div>
+           </div>
+  </div>
+	<!--TABS-->
+	<div class="tabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab"><b>Personal Statistics</b></a></li>
+        <li><a href="#tab2" data-toggle="tab"><b>Recently Played</b></a></li>
+        <li><a href="#tab3" data-toggle="tab"><b>Favorites</b></a></li>
+        <li><a href="#tab4" data-toggle="tab"><b>Leaderboard</b></a></li>
+    </ul>
+    </div>
+		<br/>
+
+
+		<!-- Applying Bootstrap to panel -->
+		<div class="tab-content">
+      <div class="tab-pane active" id="tab1">
+    		<div class="page-header">
+    			<h2 class="subtitle"><b>Top Achievements</b></h2>
+          	</div>
+          	<div class="row">
+           	 <div class="col-sm-4">
+            	<div class="panel panel-warning">
+                	<div class="panel-heading">
+                		<table>
+                			<tr>
+                				<td class="title-size">
+                 					<h3 class="panel-title"><b>Song Title</b></h3>
+                 				</td>
+                 				<td>
+                 					<img alt="1st" src="1st.png"/>
+                 				</td>
+                 			</tr>
+                 		</table>
+                	</div>
+                	<div class="panel-body">
+                  	<table>
+                  		<tr>
+                  			<td><b>Highest Score:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Longest Combo:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Accuracy:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                 	</table>
+                	</div>
+              	</div>
+            </div><!-- /.col-sm-4 -->
+           	 <div class="col-sm-4">
+            	<div class="panel panel-default">
+                	<div class="panel-heading">
+                		<table>
+                			<tr>
+                				<td class="title-size">
+                 					<h3 class="panel-title"><b>Song Title</b></h3>
+                 				</td>
+                 				<td>
+                 					<img alt="2nd" src="2nd.png"/>
+                 				</td>
+                 			</tr>
+                 		</table>
+                	</div>
+                	<div class="panel-body">
+                  	<table>
+                  		<tr>
+                  			<td><b>Highest Score:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Longest Combo:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Accuracy:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                 	</table>
+                	</div>
+              	</div>
+            </div><!-- /.col-sm-4 -->
+           	 <div class="col-sm-4">
+            	<div class="panel panel-danger">
+                	<div class="panel-heading">
+                		<table>
+                			<tr>
+                				<td class="title-size">
+                 					<h3 class="panel-title"><b>Song Title</b></h3>
+                 				</td>
+                 				<td>
+                 					<img alt="3rd" src="3rd.png"/>
+                 				</td>
+                 			</tr>
+                 		</table>
+                	</div>
+                	<div class="panel-body">
+                  	<table>
+                  		<tr>
+                  			<td><b>Highest Score:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Longest Combo:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                  		<tr>
+                  			<td><b>Accuracy:</b></td>
+                  			<td class="td_margin"></td>
+                  			<td><!-- Enter Values here with EJS/Django --></td>
+                  		</tr>
+                 	</table>
+                	</div>
+              	</div>
+            </div><!-- /.col-sm-4 -->
+          </div><!-- row -->
+        </div> <!-- tab 1-->
+        <div class="tab-pane" id="tab2">
+          <!-- TODO "Recently Played"-->
+        </div> <!-- tab 2-->
+        <div class="tab-pane" id="tab3">
+          <!-- TODO "Favorites"-->
+        </div> <!-- tab 3-->
+        <div class="tab-pane" id="tab4">
+          <!-- TODO "Leaderboard" -->
+        </div> <!-- tab 4-->
+    </div> <!-- tab-content -->
+
+    <footer class="footer">&copy; 2014. Global TIES: Town and Country Learning Center Team</footer>
+  </div>
+
+    	<script src="javascript/jquery.min.js"></script>
+    	<script src="javascript/bootstrap.js"></script>
+    	<script src="javascript/docs.min.js"></script>
+	</body>
+
+</html>
