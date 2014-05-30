@@ -145,18 +145,6 @@ h1 {
 	background: url(http://i.imgur.com/YsyS5y8.png) 0 -16px repeat-x;
 }
 
-.FavoritesTable th
-{
-	text-align: center;
-	padding-right: 100px;
-}
-
-.paddingFavortesTable td
-{
-	text-align: center;
-	padding-right: 100px;
-}
-
 /*Leaderboard CSS*/
 #tfheader
 {
@@ -250,13 +238,12 @@ table.leaderboard
     color: white;
 }
 
-
 .progress-margin
 {
     margin-left: 50px;
     border: 1px solid black;
-
 }
+
 /*Table to compare to others*/
 .leaderboardTableRows > tr > td
 {
@@ -274,6 +261,7 @@ table.leaderboard
 {
 	text-align: center;
 }
+
 
 /*Recent:30/60days visual/table*/
 
